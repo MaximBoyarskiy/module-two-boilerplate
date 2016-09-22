@@ -3,8 +3,8 @@ import { handleUserClick } from './handlers';
 
 export function renderAccount(account) {
   return `
-    <div class="search-results_item js-account" data-id="${account.account_id}">
-    ${account.nickname}</div>
+    <li class="list-group-item js-account" data-id="${account.account_id}">
+    ${account.nickname}</li>
   `;
 }
 
@@ -13,15 +13,15 @@ export function renderError(message) {
   searchResults.innerHTML = message;
 }
 
-export function renderUserProfile({ nickname, globalRating, statistics }) {
+export function renderUserProfile({ nickname, global_rating: globalRating, statistics }) {
   const { wins, battles } = statistics.all;
   const winsPercent = (wins / (battles * 100)).toFixed(2);
   return `
-    <h1>${nickname}</h1>
-    <div>
-    <p>Ratings: ${globalRating}</p>
-    <p>Battles: ${battles}</p>
-    <p>Wins Percent: ${winsPercent} %<p>
+    <div class="jumbotron">
+    <h1><span class="glyphicon glyphicon-user">${nickname}</span></h1>
+    <p>Ratings <span class="badge">${globalRating}</span></p>
+    <p>Battles <span class="badge">${battles}</span></p>
+    <p>Wins Percent <span class="badge">${winsPercent}</span><p>
     </div>
   `;
 }
