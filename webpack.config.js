@@ -30,7 +30,7 @@ module.exports = {
   devtool: 'cheap-module-inline-source-map',
   debug: debug,
   output: {
-    path: './src/dist',
+    path: './dist',
     filename: '[hash].bundle.js'
   },
   devServer: {
@@ -41,7 +41,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel'
+        loaders: ['babel', 'eslint']
       },
       {
         test: /\.css$/,

@@ -1,0 +1,15 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "env": {
+        "browser": true
+    },
+    "rules": {
+      "semi": 2,
+      "import/prefer-default-export": 0
+    }
+}

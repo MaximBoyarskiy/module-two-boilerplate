@@ -1,5 +1,5 @@
 
 export function toggleSpinner() {
-  let spinner = document.querySelector('#spinner')
-  spinner.classList.toggle('show')
+  const spinner = document.querySelector('#spinner');
+  spinner.classList.toggle('show');
 }
