@@ -7,7 +7,8 @@
     "test": "NODE_PATH=./src mocha --compilers js:babel-core/register --recursive --require jsdom-global/register --require whatwg-fetch/fetch ./tests",
     "build": "NODE_ENV=production webpack",
     "start": "webpack-dev-server",
-    "eslint": "eslint ./src/"
+    "eslint": "eslint ./src/",
+    "coverage": "nyc --reporter html --include=src/**/*.js npm test"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "jsdom": "^9.5.0",
     "jsdom-global": "^2.1.0",
     "mocha": "^3.0.2",
+    "nyc": "^8.3.0",
     "sinon": "^1.17.6",
     "style-loader": "^0.13.1",
     "webpack-dev-server": "~1.15.1",

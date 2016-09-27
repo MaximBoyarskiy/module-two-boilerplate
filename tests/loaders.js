@@ -5,7 +5,7 @@ import { assert } from 'chai'
 import { loadUsers } from 'loaders'
 import sinon from 'sinon'
 
-describe.only('loadUsers', function() {
+describe('loadUsers', function() {
   const fakeData = {foo: 'bar'},
     fakeUser = 'fakeUserNick';
 
