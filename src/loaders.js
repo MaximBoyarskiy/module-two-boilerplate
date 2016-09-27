@@ -3,7 +3,7 @@ const GAME = 'wot';
 
 
 function makeRequest(url) {
-  return fetch(url)
+  return window.fetch(url)
   .then(response => response.json())
   .then(responseJson => new Promise((resolve, reject) => {
     if (responseJson.status === 'ok') {
