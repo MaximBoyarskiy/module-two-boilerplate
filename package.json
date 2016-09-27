@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/veranika-sab/module-two-boilerplate.git"
+    "url": "git+https://github.com/MaximBoyarskiy/module-two-boilerplate.git"
   },
   "author": "MaximBoyarskiy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/veranika-sab/module-two-boilerplate/issues"
+    "url": "https://github.com/MaximBoyarskiy/module-two-boilerplate/issues"
   },
-  "homepage": "https://github.com/veranika-sab/module-two-boilerplate#readme",
+  "homepage": "https://github.com/MaximBoyarskiy/module-two-boilerplate#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "webpack": "~1.13.2"
